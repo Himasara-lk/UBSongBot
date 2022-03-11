@@ -48,13 +48,13 @@ def song(client, message):
         )
         print(str(e))
         return
-    m.edit("📥 Downloading the song by @UvinduBro 📥")
+    m.edit("**🤭💐 ඔබගේ ගීතය බාගත කරමින් පවතී./nකරුණාකර මදක් රැදීසිටින්න...**")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = '**~ Uploaded by @UBSongBot ~**'
+        rep = '**🤭🤪 මෙන්න ඔයා ඉල්ලපු ගීතය.../n🦜 Uploaded By @MusicDownloaderLKBot'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
