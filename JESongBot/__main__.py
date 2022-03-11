@@ -8,12 +8,12 @@ from JESongBot import Jebot as app
 from JESongBot import LOGGER
 
 pm_start_text = """
-Hey [{}](tg://user?id={}), I'm Song Downloader Bot 🎵
+🌹 Hey [{}](tg://user?id={}), I'm Song Downloader Bot 🎵
 
-😉 Just send me the song name you want to download.😋
+😉 Just send me the song name you want to download.
 🦜 EX:```/song Alone```
 
-💐 A bot by SLMusicZoneX 🇱🇰
+💐 A bot by @SLMusicZoneX 🇱🇰
 """
 
 @app.on_message(filters.command("start"))
